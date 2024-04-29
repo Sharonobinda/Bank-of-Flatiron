@@ -53,7 +53,7 @@ Use this gif as an example of how the app should work.
 **Then follow the instructions below for live server to work well with json-server​****
 
 - Run the following command to get server started:
-   '​npx json-server --watch db.json' 
+   ​npx json-server --watch db.json 
 - Test your server by visiting this route in the browser:
    http://localhost:3000/transactions/
 - In a new terminal, run `npm start`. This will run your React app on port `8000`.
