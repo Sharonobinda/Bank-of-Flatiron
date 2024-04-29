@@ -9,7 +9,7 @@ const AccountContainer = () => {
   const [filteredTransactionsList, setFilteredTransactions] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:8001/transactions')
+    fetch('https://bank-of-flatiron-7yhf.onrender.com/transactions')
       .then(response => response.json())
       .then(data => {
         if (Array.isArray(data)) {
@@ -35,7 +35,7 @@ const AccountContainer = () => {
 
   const deleteTransaction = async (id) => {
     try {
-      const response = await fetch(`http://localhost:8001/transactions/${id}`, {
+      const response = await fetch(`https://bank-of-flatiron-7yhf.onrender.com/transactions/${id}`, {
         method: "DELETE",
       });
 
